@@ -19,7 +19,7 @@ const Intro = () => {
           experienced team create and develop brands with personality and
           resonance.
         </p>
-        <a href="/talk">Let's talk</a>
+        <a href="/">Let's talk</a>
       </IntroContentStyles>
       <IntroImageStyles src={Dog} alt="dog" />
     </IntroStyles>

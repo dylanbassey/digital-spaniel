@@ -1,7 +1,20 @@
 import { MdOutlineMenu } from "react-icons/md";
 import styled from "styled-components";
 
+export const MobileNavIconStyle = styled(MdOutlineMenu)`
+  position: fixed;
+  right: 0;
+  cursor: pointer;
+  z-index: 1000;
+`;
+
 export const BigNavStyles = styled.nav`
+  /* background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); Very light and translucent white */
   width: 60%;
   display: flex;
   justify-content: flex-end;
@@ -20,7 +33,7 @@ export const BigNavStyles = styled.nav`
   }
 
   a {
-    color: white;
+    color: #9f9d9d;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 
@@ -28,7 +41,13 @@ export const BigNavStyles = styled.nav`
       text-decoration: underline;
       text-decoration-thickness: 3px;
       text-underline-offset: 5px;
-      text-decoration-color: purple;
+      text-decoration-color: white;
+    }
+    &:visited {
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 5px;
+      text-decoration-color: white;
     }
   }
 `;
@@ -46,7 +65,7 @@ export const SmallNavStyles = styled.nav`
     padding-left: 2rem;
 
     li {
-      padding: 2px 0;
+      padding-top: 5rem;
     }
   }
 
@@ -56,19 +75,17 @@ export const SmallNavStyles = styled.nav`
     transition: all 0.2s ease-in-out;
     font-weight: 600;
 
-    &:hover,
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 5px;
+      text-decoration-color: white;
+    }
     &:visited {
       text-decoration: underline;
       text-decoration-thickness: 3px;
       text-underline-offset: 5px;
-      text-decoration-color: purple;
+      text-decoration-color: white;
     }
   }
-`;
-
-export const MobileNavIconStyle = styled(MdOutlineMenu)`
-  position: fixed;
-  right: 0;
-  cursor: pointer;
-  z-index: 1000;
 `;

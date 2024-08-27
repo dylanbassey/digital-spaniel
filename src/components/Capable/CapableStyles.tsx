@@ -129,6 +129,19 @@ export const CapableTraitsStyles = styled.div`
     color: #506473;
     letter-spacing: 0.53px;
     margin: 0;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 5px;
+      text-decoration-color: #506473;
+      cursor: pointer;
+    }
+    &:visited {
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 5px;
+      text-decoration-color: #506473;
+    }
   }
 
   @media (max-width: 1024px) {
