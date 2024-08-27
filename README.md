@@ -1,3 +1,24 @@
+# Self Review
+
+This is a small self-review on what I could have done better or what I could have done if I had spent more time.
+
+## Styled components
+
+I used styled-components throughout the project as it allows for cleaner code and improved readability. For future projects I should have tried to implement more global components that I could use throughout the project, I found myself repeating the same CSS styling for multiple different components and would have allowed for cleaner code if I implemented a global styling. 
+
+## Nav
+
+For the design spec, I felt that the top navigation did not account for when a user would scroll down and the white text would be lost in the background. Therefore I implemented the given navigation but changed the color to a more grey to maintain the design but also be shown to a user if they were to scroll to a white background. Also in future work, I will improve the mobile navigation. An afterthought occurred and I did not realise at the time of implementation how it did not fit the website's theme and looked very basic.
+
+## Data 
+
+I had two options for fetching the testimonial data. Using Context API or redux kit requests. If you look at the project I have implemented both methods however in practise I only used the Context API to fetch the data as I believe this was more appropriate and would mirror a real-life case when fetching mocked offline data stored locally.
+
+## Case studies
+
+Due to time, I was unable to complete this section of the design spec, however, in future, I will create a custom component for this image viewer and add the ability to press an arrow button to swipe between different case studies.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
